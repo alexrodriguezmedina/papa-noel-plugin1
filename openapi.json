@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Papà Noel",
+    "version": "1.0.0",
+    "description": "Interacciona amb Papà Noel per fer preguntes i compartir desitjos."
+  },
+  "paths": {
+    "/papa_noel": {
+      "post": {
+        "summary": "Envia una pregunta a Papà Noel",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "pregunta": {
+                    "type": "string",
+                    "description": "La pregunta per a Papà Noel."
+                  }
+                },
+                "required": ["pregunta"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Resposta de Papà Noel",
+            "content": {
+              "application/json": {
+                "example": {
+                  "resposta": "Ho ho ho! Sóc Papà Noel. Com puc ajudar-te avui?"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

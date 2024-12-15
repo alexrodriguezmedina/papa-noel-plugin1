@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "papa_noel_plugin",
+  "name_for_human": "Plugin de Papà Noel",
+  "description_for_model": "Un plugin que simula converses amb Papà Noel.",
+  "description_for_human": "Fes preguntes a Papà Noel i comparteix la teva llista de desitjos.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://papa-noel-plugin.replit.app/openapi.json"
+  },
+  "logo_url": "https://example.com/logo_papa_noel.png",
+  "contact_email": "teu_email@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
